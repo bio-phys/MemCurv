@@ -1,9 +1,9 @@
 #! /usr/bin/env python
 #---------------------------------------------------------------------------#
 # Function: Fit a spherical surface to a discontinuous lipid patch.         #
-# Usage: ./Fit_bicelle_sph_cap.py                                           #
+# Usage: ./Get_mem_profile_hcf_abcd.py                                      #
 # Author: Ramachandra M. Bhaskara (rabhaska@biophys.mpg.de)                 #
-# Version: 0.4 (06.06.2018)                                                 #
+# Version: 0.1 (06.06.2018)                                                 #
 #---------------------------------------------------------------------------#
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
 #OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
