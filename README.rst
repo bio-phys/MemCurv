@@ -57,6 +57,12 @@ a.
 
 b.
 
+c.
+
+d.
+
+
+
 Other options and settings
 --------------------------
 Depending on membrane composition, the selection of atom type constituting the mid-plane of the bilayer needs to be selected. 
