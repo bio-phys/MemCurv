@@ -139,8 +139,8 @@ FAQs
 ====
 Q: How is the sign of the bicelle curvature decided?
 
-A: The sign of bicelle curvature depends on the identity of leaflets. Lipid flip-flop at the open edge merges the two leaflet, therefore, we use the identity as defined at the start frame. If more than 50 % of upper leaflet lipids remain above the fitted mid-plane spherical surface, then the curvature is positive, else the sign of the curvature is negative.
+A: Lipid flip-flop at the open edge merges the two leaflets. Therefore, we use the identity as defined in the start frame (by lipid assignment). If more than 50 % of upper leaflet lipids remain above the fitted spherical surface of the membrane-patch, then the curvature is positive, else it is negative.
 
 Q: My curvature values are negative instead of positive. What is going on?
 
-A: The sign of the curvature is dictated by directionality-convention. In the Monge representation, using h(x,y) representation of the membrane profile gives the positive curvature for the lower leaflet and negative curvature for the upper leaflet. To compute curvatues along upper leaflet, as in the manuscript, we compute the negative of the Shape operator matrix (S=-S).
+A: In the Monge representation, using a height function, such that z=h(x,y) and positive, to represent the membrane shape, the default curvature values represent the curvature along the lower leaflet and its inverse represent curvature along the upper leaflet. To compute curvatues along upper leaflet, as in the manuscript, we mutiply the Shape operator with -1 (S = -1*S).
