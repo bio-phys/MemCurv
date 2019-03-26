@@ -50,10 +50,10 @@ No instalation required. Directly run the Python programs if the dependecies are
 Usage
 =====
 
-1.      Needs two files from discontinuous simulations.
+1.      Example input files from MD simulations of a discontinuous membrane system using MARTINI force-field, for e.g. bicelle/bilayer patches (GROMACS formatted .gro and .xtc).
 
-* fam_bicelle.gro, a configuration file from MARTINI simulation
-* fam_bicelle.xtc, a processed GROMACS trajectory of the membrane patch, e.g. bicelle system.
+* fam_bicelle.gro, a configuration file contining FAM134B embedded in bicelle (DMPC+DHPC)
+* fam_bicelle.xtc, a processed GROMACS trajectory of the bicelle.
 
 .. code-block:: bash 
 
@@ -61,10 +61,10 @@ Usage
 
 The output file contains
 
-2.      Needs two files from the curved bilayer simulations under PBC conditions
+2.      Example input files from MD simulations of a curved membrane under periodic boundary conditions using MARTINI force-field (GROMACS formatted .gro and .xtc).
 
-* fam_buckle.gro, a configuration file of the curved bilayer from MARTINI simulation
-* fam_buckle_100ns.xtc, a processed GROMACS trajectory of the buckled membrane simulation
+* fam_buckle.gro, a configuration file of the curved bilayer with protein (FAM134B) inclusion.
+* fam_buckle_100ns.xtc, a processed GROMACS trajectory of the curved membrane simulation.
 
 .. code-block:: bash
 
