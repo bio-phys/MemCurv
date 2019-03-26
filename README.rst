@@ -27,11 +27,11 @@ This software contains two Python packages:
 
 *`Fit_bicelle_sph_cap.py`_ provides algorithm for description of shape changes of a discontinuous membrane pathch. For.e.g. bicelle-to-vesicle conversion by patch-closure. The program uses least square fits for curved membrane-patches to spherical cup/cap shaped surfaces, to compute the constant mean curvature. 
 
-.. image:: fam_bicelle.pdf
+.. image:: fam_bicelle.png
 
 *`Get_mem_profile_hcf_abcd.py`_ and `Cal_local_curv_props_abcd.py`_ are part of a combined package which provide algorithms for description of curved membrane surfaces under periodic boundary conditions. They can be used independently with a trajectory of curved membrane to quantify the membrane shapes and to compute local curvature properties of protein inclusion. 
 
-.. image:: fam_buckle.pdf
+.. image:: fam_buckle.png
 Help
 ====
 
