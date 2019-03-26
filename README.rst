@@ -35,7 +35,7 @@ This software contains two Python packages:
 Help
 ====
 
-Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/curvature/issues .
+Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/membrane_shape_curvature/issues .
 
 Dependencies and Software Requirements
 =========================================
@@ -57,7 +57,7 @@ Usage
 
 .. code-block:: bash 
 
-./python Fit_bicelle_sph_cap.py
+        ./python Fit_bicelle_sph_cap.py
 
 The output file contains
 
@@ -68,8 +68,8 @@ The output file contains
 
 .. code-block:: bash
 
-./python Get_mem_profile_hcf_abcd.py
-./python Cal_local_curv_props_abcd.py
+        ./python Get_mem_profile_hcf_abcd.py
+        ./python Cal_local_curv_props_abcd.py
 
 Other options and settings
 --------------------------
