@@ -138,7 +138,7 @@ FAQs
 ====
 Q: How is the sign of the bicelle curvature decided?
 
-A: The sign of bicelle curvature depends on the identity of leaflets. Lipid flip-flop at the open edge. If more than 50 % upper leaflet lipids from the starting structure flip onto the lower leaflet, the sign of the curvature is negative.
+A: The sign of bicelle curvature depends on the identity of leaflets. Lipid flip-flop at the open edge merges the two leaflet, therefore, we use the identity as defined at the start frame. If more than 50 % of upper leaflet lipids remain above the fitted mid-plane spherical surface, then the curvature is positive, else the sign of the curvature is negative.
 
 Q: My curvature values are negative instead of positive. What is going on?
 
