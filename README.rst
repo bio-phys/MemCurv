@@ -131,15 +131,15 @@ Column  Description
 22      Angle (deg) between AmpH1 and AmpH2
 23      Angle (deg) between AmpH1 and k_1(x,y)
 24      Angle (deg) between AmpH2 and k_1(x,y)
-25-26   COM of protein [x, y] coordinates
+25-26   Protein COM coordinates [Px, Py]
 ======  ======
 
 FAQs
 ====
-Q: My curvature values have negative instead of positive values. What is going on?
-
-A: The sign of the curvature is dictated by convention. In the Monge representation, using h(x,y) representation of the membrane profile gives the curvature of the lower leaflet of the profile. To compute curvatues along upper leaflet, as in the manuscript (Shape operator S=-S).
-
 Q: How is the sign of the bicelle curvature decided?
 
-A: The bicelle curvature sign depends on the lipid flip-flop at the open edge. If more than 50 % upper leaflet lipids from the starting structure flip onto the lower leaflet, the sign of the curvature is negative.
+A: The sign of bicelle curvature depends on the identity of leaflets. Lipid flip-flop at the open edge. If more than 50 % upper leaflet lipids from the starting structure flip onto the lower leaflet, the sign of the curvature is negative.
+
+Q: My curvature values are negative instead of positive. What is going on?
+
+A: The sign of the curvature is dictated by directionality-convention. In the Monge representation, using h(x,y) representation of the membrane profile gives the positive curvature for the lower leaflet and negative curvature for the upper leaflet. To compute curvatues along upper leaflet, as in the manuscript, we compute the negative of the Shape operator matrix (S=-S).
