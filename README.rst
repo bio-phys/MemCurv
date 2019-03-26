@@ -53,7 +53,8 @@ Usage
 (1) needs two files from discontinuous simulations.
 fam_bicelle.gro:        a configuration file from MARTINI simulation
 fam_bicelle.xtc:        a processed GROMACS trajectory of the membrane patch, e.g. bicelle system.
-..code-block::bash 
+
+..code-block:: bash 
 
 ./python Fit_bicelle_sph_cap.py
 
@@ -63,7 +64,7 @@ The output file contains
 fam_buckle.gro:         a configuration file of the curved bilayer from MARTINI simulation
 fam_buckle_100ns.xtc:   a processed GROMACS trajectory of the buckled membrane simulation
 
-..code-block::bash
+..code-block:: bash
 
 ./python Get_mem_profile_hcf_abcd.py
 ./python Cal_local_curv_props_abcd.py
