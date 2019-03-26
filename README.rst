@@ -35,7 +35,7 @@ This software contains two Python packages:
 Help
 ====
 
-Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/membrane_shape_curvature/issues .
+Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/MemCurv/issues .
 
 Dependencies and Software Requirements
 =========================================
