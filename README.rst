@@ -1,17 +1,17 @@
 =====================================================
-MEMBRANE SHAPE & CURVATURE
+MemCurv
 =====================================================
 
 :Authors:       Ramachandra M. Bhaskara
 :Year:          2019
 :Licence:       GPLv3
-:Copyright:      2019 Ramachandra M. Bhaskara, Gerhard Hummer
-:References:    - [Bhaskara et al, 2019] Bhaskara RM, Grumati P, Garcia-Padro J, Kalayil S, Covurrbais-Pinto A, Chen W, Kudrashyev M, Dikic I, Hummer G. Curvature induction and sensing by FAM134B Reticulon homology domain assist selective-ER phagy.
+:Copyright:     2019 Ramachandra M. Bhaskara, Gerhard Hummer
+:References:    [Bhaskara et al, 2019] Bhaskara RM, Grumati P, Garcia-Padro J, Kalayil S, Covurrbais-Pinto A, Chen W, Kudrashyev M, Dikic I, Hummer G. Curvature induction and sensing by FAM134B Reticulon homology domain assist selective-ER phagy.
 
 Description
 =============
 
-This software package contains a three python programs used to
+The MemCurv software package contains a three python programs used to
 
 1. Compute curvatures of discontinuous membrane systems
 2. a. Fit shape profiles of curved membranes under periodic boundary conditions.
