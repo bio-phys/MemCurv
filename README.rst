@@ -11,13 +11,13 @@ MemCurv
 Description
 =============
 
-The MemCurv software package contains a three python programs used to
+The MemCurv software package contains three python programs used to describe membrane shapes and quantify their curvature properties from MD smulations using the coarse-grained MARTINI model. The individula python programs
 
-1. Compute curvatures of discontinuous membrane systems
-2. a. Fit shape profiles of curved membranes under periodic boundary conditions.
-   b. Compute local curvature properties of protein inclusions in curved membranes from optimized height profiles.
+1. Compute Mean (Constant) curvature of the discontinuous membrane system by fitting membrane shape to spherical surfaces.
+2. a. Fit shape profiles of curved or buckled membranes under periodic boundary conditions to obtain optimized Fourier representation of the curved surface.
+   b. Compute local curvature properties of protein inclusions in curved or buckled membranes from optimized height profiles.
 
-For a detailed description of the procedure and the algorithm, we refer to [Bhaskara et al, 2019].
+For a detailed description of the procedures and the algorithm, we refer to [Bhaskara et al, 2019].
 
 
 Overview of the software
@@ -86,14 +86,14 @@ Three output files are generated with default names.
 
 Spherical surfaces of discontinuous membrane systems. 
 -----------------------------------------
-"Fit_bicelle_sph_cap.py" generates an output file "bicelle_curv_ts.dat" which contains 8 tab delimited columns
+"Fit_bicelle_sph_cap.py" generates an output file "bicelle_curv_ts.dat" which contains the following tab delimited data.
 
 ======  ======
 Column  Description
 ======  ======
-1       Trajectory frame/time
-2       Radius, R_c [Å] of curvature (fitted spherical surface)
-3       Curvature, H [1/Å]
+1       Trajectory frame / Time [ns]
+2       Radius of curvature, R_c [Å]
+3       Mean curvature, H [1/Å]
 4-6     Sphere center coordinates [x_c, y_c, z_c]
 7       Residual (least square fit)
 8       Iteration
@@ -106,8 +106,8 @@ Shape profile of curved bilayer under PBC.
 ======  ======
 Column  Description
 ======  ======
-1       Trajectory frame/time
-2-last  Height coefficients. They can be written as four k x k matrices.
+1       Trajectory frame / Time [ns]
+2-last  Height coefficients. They can be written as four real valued (k x k) matrices.
 ======  ======
 
 Local curvarure of protein inclusion in curved bilayer under PBC.
@@ -117,21 +117,22 @@ Local curvarure of protein inclusion in curved bilayer under PBC.
 ======  ======
 Column  Description
 ======  ======
-1       Trajectory frame/time
-2       Gaussian curvature K_G(x,y)[1/Å^2]
-3       Mean curvature H(x,y) [1/Å]
-4       Principal curvature k_1(x,y) [1/Å]
-5       Principal curvature k_2(x,y) [1/Å]
+1       Trajectory frame / Time [ns]
+2-7     Local curvature properties at protein center-of-mass position (COM)
+2       Local Gaussian curvature, K_G(x,y)[1/Å^2]
+3       Local Mean curvature, H(x,y) [1/Å]
+4       Local Principal directional curvature, k_1(x,y) [1/Å]
+5       Local Principal directional curvature, k_2(x,y) [1/Å]
 6       Angle (deg) between local k_1(x,y) and e_x
 7       Angle (deg) between local k_2(x,y) and e_x
-8-13    same as 2-7, but computed for amphipathic helix 1 (AmpH1)
-14-19   same as 2-7, but computed for amphipathic helix 2 (AmpH2)
-20      Angle (deg) between AmpH1 and e_x
-21      Angle (deg) between AmpH2 and e_x
-22      Angle (deg) between AmpH1 and AmpH2
-23      Angle (deg) between AmpH1 and k_1(x,y)
-24      Angle (deg) between AmpH2 and k_1(x,y)
-25-26   Protein COM coordinates [Px, Py]
+8-13    Local curvature properties at amphipathic helix-1 COM (AH_1)
+14-19   Local curvature properties at amphipathic helix 2 COM (AH_2)
+20      Angle (deg) between AH_1 and e_x
+21      Angle (deg) between AH_2 and e_x
+22      Angle (deg) between AH_1 and AH_2
+23      Angle (deg) between AH_1 and k_1(x,y)
+24      Angle (deg) between AH_2 and k_1(x,y)
+25-26   Protein COM position along the membrane [Px, Py]
 ======  ======
 
 FAQs
