@@ -1,4 +1,18 @@
 #! /usr/bin/env python
+#---------------------------------------------------------------------------#
+# Function: Fit a spherical surface to a discontinuous lipid patch.         #
+# Usage: ./Fit_bicelle_sph_cap.py                                           #
+# Author: Ramachandra M. Bhaskara (rabhaska@biophys.mpg.de)                 #
+# Version: 0.4 (06.06.2018)                                                 #
+#---------------------------------------------------------------------------#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+#OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+#MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND 
+#NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE 
+#DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, 
+#WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+#CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#############################################################################
 import numpy as np
 import MDAnalysis as mda
 from numpy import exp, arange
