@@ -51,20 +51,22 @@ Usage
 =====
 
 1.      Needs two files from discontinuous simulations.
+
 * fam_bicelle.gro, a configuration file from MARTINI simulation
 * fam_bicelle.xtc, a processed GROMACS trajectory of the membrane patch, e.g. bicelle system.
 
-..code-block:: bash 
+.. code-block:: bash 
 
 ./python Fit_bicelle_sph_cap.py
 
 The output file contains
 
 2.      Needs two files from the curved bilayer simulations under PBC conditions
+
 * fam_buckle.gro, a configuration file of the curved bilayer from MARTINI simulation
 * fam_buckle_100ns.xtc, a processed GROMACS trajectory of the buckled membrane simulation
 
-..code-block:: bash
+.. code-block:: bash
 
 ./python Get_mem_profile_hcf_abcd.py
 ./python Cal_local_curv_props_abcd.py
@@ -85,6 +87,7 @@ Three output files are generated with default names.
 Spherical surfaces of discontinuous membrane systems. 
 -----------------------------------------
 "Fit_bicelle_sph_cap.py" generates an output file "bicelle_curv_ts.dat" which contains 8 tab delimited columns
+
 * 1     Trajectory frame/time
 * 2     Radius of Fitted spherical surface [Angstroms]
 * 3     Curvature of the fitted surface [1/Angstroms]
@@ -95,12 +98,14 @@ Spherical surfaces of discontinuous membrane systems.
 Shape profile of curved bilayer under PBC. 
 -------------------------------------------
 "Get_mem_profile_hcf_abcd.py" generates an output file "popf_1ns_k3_abcd_fam_buckled.dat" which contains optimized height coefficients describing the membrane shape profile. 
+
 * 1     The first column contains the time/frame of the trajectory 
 * 2-    to last columns contain different height coefficients. They can always be written as four kxk matrices.
 
 Local curvarure of protein inclusion in curved bilayer under PBC.
 ---------------------------------------------------------------------------
 "Cal_local_curv_props_abcd.py" generates an output file "fam_1ns_abcd_k3_curv_props.dat" which contains the local curvature properties of the sampled protein curvatures (tab delimited file).
+
 * 1     Trajectory frame/time
 * 2     Gaussian curvature K_G(x,y)
 * 3     Mean curvature H(x,y)
