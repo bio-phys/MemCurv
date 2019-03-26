@@ -88,39 +88,51 @@ Spherical surfaces of discontinuous membrane systems.
 -----------------------------------------
 "Fit_bicelle_sph_cap.py" generates an output file "bicelle_curv_ts.dat" which contains 8 tab delimited columns
 
-* 1     Trajectory frame/time
-* 2     Radius of Fitted spherical surface [Angstroms]
-* 3     Curvature of the fitted surface [1/Angstroms]
-* 4-6   Co-ordinate of the centre of the fitted sphere [x_c, y_c, z_c]
-* 7     Residual from the least square fit
-* 8     Iterations
+======  ======
+Column  Description
+======  ======
+1       Trajectory frame/time
+2       Radius, R_c [Å] of curvature (fitted spherical surface)
+3       Curvature, H [1/Å]
+4-6     Sphere center coordinates [x_c, y_c, z_c]
+7       Residual (least square fit)
+8       Iteration
+======  ======
 
 Shape profile of curved bilayer under PBC. 
 -------------------------------------------
 "Get_mem_profile_hcf_abcd.py" generates an output file "popf_1ns_k3_abcd_fam_buckled.dat" which contains optimized height coefficients describing the membrane shape profile. 
 
-* 1     The first column contains the time/frame of the trajectory 
-* 2-    to last columns contain different height coefficients. They can always be written as four kxk matrices.
+======  ======
+Column  Description
+======  ======
+1       Trajectory frame/time
+2-last  Height coefficients. They can be written as four k x k matrices.
+======  ======
 
 Local curvarure of protein inclusion in curved bilayer under PBC.
 ---------------------------------------------------------------------------
 "Cal_local_curv_props_abcd.py" generates an output file "fam_1ns_abcd_k3_curv_props.dat" which contains the local curvature properties of the sampled protein curvatures (tab delimited file).
 
-* 1     Trajectory frame/time
-* 2     Gaussian curvature K_G(x,y)
-* 3     Mean curvature H(x,y)
-* 4     Principal curvature k_1(x,y)
-* 5     Principal curvature k_2(x,y)
-* 6     Angle (deg) between local k_1(x,y) and e_x
-* 7     Angle (deg) between local k_2(x,y) and e_x
-* 8-13  same as 2-7, but computed for amphipathic helix 1 (AmpH1).
-* 14-19 same as 2-7, but computed for amphipathic helix 2 (AmpH2).
-* 20    Angle (deg) between AmpH1 and e_x
-* 21    Angle (deg) between AmpH2 and e_x
-* 22    Angle (deg) between AmpH1 and AmpH2
-* 23    Angle (deg) between AmpH1 and k_1(x,y)
-* 24    Angle (deg) between AmpH2 and k_1(x,y)
-* 25-26 x, y coordinates defining the COM of protein.
+======  ======
+Column  Description
+======  ======
+1       Trajectory frame/time
+2       Gaussian curvature K_G(x,y)[1/Å^2]
+3       Mean curvature H(x,y) [1/Å]
+4       Principal curvature k_1(x,y) [1/Å]
+5       Principal curvature k_2(x,y) [1/Å]
+6       Angle (deg) between local k_1(x,y) and e_x
+7       Angle (deg) between local k_2(x,y) and e_x
+8-13    same as 2-7, but computed for amphipathic helix 1 (AmpH1)
+14-19   same as 2-7, but computed for amphipathic helix 2 (AmpH2)
+20      Angle (deg) between AmpH1 and e_x
+21      Angle (deg) between AmpH2 and e_x
+22      Angle (deg) between AmpH1 and AmpH2
+23      Angle (deg) between AmpH1 and k_1(x,y)
+24      Angle (deg) between AmpH2 and k_1(x,y)
+25-26   COM of protein [x, y] coordinates
+======  ======
 
 FAQs
 ====
