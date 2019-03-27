@@ -25,7 +25,7 @@ Overview of the software
 
 This software contains two Python packages:
 
-* "Fit_bicelle_sph_cap.py" provides algorithm for description of shape changes of a discontinuous membrane pathch. For.e.g. bicelle-to-vesicle conversion by patch-closure. The program uses least square fits for curved membrane-patches to spherical cup/cap shaped surfaces, to compute the constant mean curvature. 
+* "Fit_bicelle_sph_cap.py" provides algorithm for description of shape changes of a discontinuous membrane patch. For.e.g. bicelle-to-vesicle conversion by patch-closure. The program uses least square fits for curved membrane-patches to spherical cup/cap shaped surfaces, to compute the constant mean curvature. 
 
 .. image:: fam_bicelle.png
 
@@ -35,7 +35,7 @@ This software contains two Python packages:
    Help
 ====
 
-Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/MemCurv/issues .
+Please, if you have an issue with the software, open an issue here on the git-hub repository https://github.com/bio-phys/MemCurv/issues .
 
 Dependencies and Software Requirements
 =========================================
@@ -45,7 +45,7 @@ Dependencies and Software Requirements
 
 Installation
 ============
-No instalation required. Directly run the Python programs if the dependencies are installed before.
+No installation required. Directly run the Python programs if the dependencies are installed before.
 
 Usage
 =====
