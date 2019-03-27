@@ -6,12 +6,12 @@ MemCurv
 :Year:          2019
 :Licence:       GPLv3
 :Copyright:     2019 Ramachandra M. Bhaskara, Gerhard Hummer
-:References:    [Bhaskara et al, 2019] Bhaskara RM, Grumati P, Garcia-Padro J, Kalayil S, Covurrbais-Pinto A, Chen W, Kudrashyev M, Dikic I, Hummer G. Curvature induction and sensing by FAM134B Reticulon homology domain assist selective-ER phagy.
+:References:    [Bhaskara et al, 2019] Bhaskara RM, Grumati P, Garcia-Padro J, Kalayil S, Covarrubais-Pinto A, Chen W, Kudryashev M, Dikic I, Hummer G. Curvature induction and membrane remodeling by FAM134B reticulon homology domain assist selective-ER phagy.
 
 Description
 =============
 
-The MemCurv software package contains three python programs used to describe membrane shapes and quantify their curvature properties from MD smulations using the coarse-grained MARTINI model. The individula python programs
+The MemCurv software package contains three python programs used to describe membrane shapes and quantify their curvature properties from MD simulations using the coarse-grained MARTINI model. The individual python programs
 
 1. Compute Mean (Constant) curvature of the discontinuous membrane system by fitting membrane shape to spherical surfaces.
 2. a. Fit shape profiles of curved or buckled membranes under periodic boundary conditions to obtain optimized Fourier representation of the curved surface.
@@ -32,7 +32,7 @@ This software contains two Python packages:
 * "Get_mem_profile_hcf_abcd.py" and "Cal_local_curv_props_abcd.py" are part of a combined package which provide algorithms for description of curved membrane surfaces under periodic boundary conditions. They can be used independently with a trajectory of curved membrane to quantify the membrane shapes and to compute local curvature properties of protein inclusion. 
 
 .. image:: fam_buckle.png
-Help
+   Help
 ====
 
 Please, if you have an issue with the software, open an issue here on the github repository https://github.com/bio-phys/MemCurv/issues .
@@ -45,14 +45,14 @@ Dependencies and Software Requirements
 
 Installation
 ============
-No instalation required. Directly run the Python programs if the dependecies are installed before.
+No instalation required. Directly run the Python programs if the dependencies are installed before.
 
 Usage
 =====
 
 1.      Example input files from MD simulations of a discontinuous membrane system using MARTINI force-field, for e.g. bicelle/bilayer patches (GROMACS formatted .gro and .xtc).
 
-* fam_bicelle.gro, a configuration file contining FAM134B embedded in bicelle (DMPC+DHPC)
+* fam_bicelle.gro, a configuration file containing FAM134B embedded in bicelle (DMPC+DHPC)
 * fam_bicelle.xtc, a processed GROMACS trajectory of the bicelle.
 
 .. code-block:: bash 
@@ -143,4 +143,4 @@ A: Lipid flip-flop at the open edge merges the two leaflets. Therefore, we use t
 
 Q: My curvature values are negative instead of positive. What is going on?
 
-A: In the Monge representation, using a height function, such that z=h(x,y) and positive, to represent the membrane shape, the default curvature values represent the curvature along the lower leaflet and its inverse represent curvature along the upper leaflet. To compute curvatues along upper leaflet, as in the manuscript, we mutiply the Shape operator with -1 (S = -1*S).
+A: In the Monge representation, using a height function, such that z=h(x,y) and positive, to represent the membrane shape, the default curvature values represent the curvature along the lower leaflet and its inverse represent curvature along the upper leaflet. To compute curvatures along upper leaflet, as in the manuscript (Bhaskara et al, 2019), we multiply the Shape operator with -1 (S = -1*S).
