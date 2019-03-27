@@ -32,7 +32,7 @@ This software contains two Python packages:
 * "Get_mem_profile_hcf_abcd.py" and "Cal_local_curv_props_abcd.py" are part of a combined package which provide algorithms for description of curved membrane surfaces under periodic boundary conditions. They can be used independently with a trajectory of curved membrane to quantify the membrane shapes and to compute local curvature properties of protein inclusion. 
 
 .. image:: fam_buckle.png
-   Help
+
 ====
 
 Please, if you have an issue with the software, open an issue here on the git-hub repository https://github.com/bio-phys/MemCurv/issues .
